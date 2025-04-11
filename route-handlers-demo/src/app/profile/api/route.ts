@@ -9,6 +9,10 @@ export const  GET = async (request: NextRequest) => {
     //for getting cookies
     console.log(requestHeaders.get("cookie1"));
 
+    const theme = requestHeaders.get("theme");
+
+    console.log(theme);
+
     console.log(requestHeaders.get("Authorization"));
     console.log((await headersList).get("Authorization"));
 
